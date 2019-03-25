@@ -1,0 +1,22 @@
+all: MazeBuilderSolver.exe
+
+INCLUDE_DIR="/IC:\VC_Extra\GL\include"
+LINK_INFO="/link /LIBPATH:c:\VC_Extra\GL\lib glut32.lib"
+COPY_DLL="copy \VC_Extra\GL\bin\glut32.dll ."
+
+MazeBuilderSolver.exe: MazeBuilderSolver.cpp Timer.h RandomObject.h 
+	$(COPY_DLL)	
+	cl /W4 /EHsc /std:c++17 $(INCLUDE_DIR) MazeBuilderSolver.cpp \
+    $(LINK_INFO) 
+
+
+run: MazeBuilderSolver.exe
+	.\MazeBuilderSolver.exe
+
+
+clean:
+	del MazeBuilderSolver.exe *.obj *~ glut32.dll
+
+edit:
+	cvim MazeBuilderSolver.cpp
+

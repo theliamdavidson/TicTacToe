@@ -1,0 +1,3 @@
+﻿  tic_tac_toe_skeleton.cpp
+c:\users\miste\source\repos\tic tac toe\tic tac toe\tic_tac_toe_skeleton.cpp(90): warning C4715: 'point_to_square': not all control paths return a value
+  Tic Tac Toe.vcxproj -> C:\Users\miste\source\repos\Tic Tac Toe\Debug\Tic Tac Toe.exe
